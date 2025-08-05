@@ -1,6 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import Results from './Results';
 
 export default function Home() {
   const [search, setSearch] = useState('');
@@ -38,6 +39,9 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Results />
+      </Suspense>
     </main>
   );
 }

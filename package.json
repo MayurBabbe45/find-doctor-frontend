@@ -27,5 +27,11 @@
   },
   "engines": {
     "node": "20.x"
+  },
+  "app": {
+    "page": "./app/page.tsx",
+    "layout": "./app/layout.tsx",
+    "error": "./app/error.tsx",
+    "not-found": "./app/not-found.tsx"
   }
 }
