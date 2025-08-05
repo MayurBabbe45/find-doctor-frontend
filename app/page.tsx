@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect, Suspense } from 'react';
-import Results from './Results';
+import Results from './results/page';
 
 export default function Home() {
   const [search, setSearch] = useState('');
