@@ -3,6 +3,8 @@ import { useRouter } from 'next/navigation';
 import { useState, useEffect, Suspense } from 'react';
 import Results from './results/page';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(false);
